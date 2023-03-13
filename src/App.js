@@ -1,17 +1,10 @@
+import Router from "./routes";
 
-
-import CrewList from './crew/crewList'
-
-function App() {
-
-
-
-
-
-
+const App = () => { 
+ 
   return (
-    <div className="App">
-      <CrewList />
+    <div className="font-poppins">
+      <Router />
     </div>
   );
 }
