@@ -1,12 +1,13 @@
+import Layout from "./component/Layout/Layout";
+
 import Router from "./routes";
 
-const App = () => { 
- 
+const App = () => {
   return (
-    <div className="font-poppins">
+    <Layout>
       <Router />
-    </div>
+    </Layout>
   );
-}
+};
 
 export default App;

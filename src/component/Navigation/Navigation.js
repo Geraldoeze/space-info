@@ -5,17 +5,17 @@ import { useState } from "react";
 import MainNavigation from "./MainNavigation";
 import DropDownSmall from "./DropDownSmall";
 import { Link } from "react-router-dom";
-import styless from "./styless";
+// import styless from "./styless";
 import SideDrawer from "./SideDrawer/SideDrawer";
 
 
 export default function Navigation() {
   const [toggle, setToggle] = useState(false);
   const closeToggle = () => setToggle(false);
-  const openToggle = () => setToggle(true)
+  // const openToggle = () => setToggle(true)
 
   return (
-    <nav className="fixed py-5 mb-5 w-full bg-transparent flex  item-center navbar">
+    <nav className="fixed pb-5 w-full bg-transparent flex  item-center navbar">
       <Link className="w-[40px] h-[30px] mx-5 " to="/">
           <div className="my-2">
         <img src="./images/icon.png" alt="logo" width='100px' height='100px' />
