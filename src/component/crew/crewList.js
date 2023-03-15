@@ -25,11 +25,11 @@ const CrewList = () => {
                 
                 </div> 
                 <div >
-                  <div className="my-4 flex justify-center" onClick={addNum}>
-                  <img src="./images/crew/OvalG.png" alt='ic' />
-                  <img src="./images/crew/OvalG.png" alt='ic' />
-                  <img src="./images/crew/OvalG.png" alt='ic' />
-                  <img src={view === val.id ? styles.wytImg : styles.greyImg} alt='ic' />
+                  <div className="my-4 mx-auto w-[6rem] flex justify-around " onClick={addNum}>
+                  <img src={val.id === 1 ? styles.wytImg : styles.greyImg} alt='ic' />
+                  <img src={val.id === 2 ? styles.wytImg : styles.greyImg} alt='ic' />
+                  <img src={val.id === 3 ? styles.wytImg : styles.greyImg} alt='ic' />
+                  <img src={val.id === 4 ? styles.wytImg : styles.greyImg} alt='ic' />
                     
                   </div>
                   <div>
