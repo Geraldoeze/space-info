@@ -13,6 +13,12 @@ const styles = {
     colorWyt: "font-belle font-normal text-[28px] leading-[32.09px]",
     // destination
     destText: 'text-[#FFFFFF] font-normal text-[56px] leading-[64.18px] my-5',
+    // controls
+    conSty: 'font-normal px-1 font-condense text-[14px] mx-1 leading-[17px] text-[#D0D6F9] tracking-[2.37px]',
+    active: 'text-white border-b-2',
+    // crew controls
+    greyImg: "./images/crew/OvalG.png",
+    wytImg: "./images/crew/Oval.png",
 }
 
 export default styles;

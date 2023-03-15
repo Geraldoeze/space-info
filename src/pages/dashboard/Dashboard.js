@@ -9,7 +9,7 @@ export default function Dashboard() {
       style={{ fontFamily: "Barlow Condense" }}
     >
       <div className={`${styles.mainContent}`}>
-        <div className={` flex flex-col mx-[5rem] mb-5   text-center `}>
+        <div className={` flex flex-col mx-[2rem] mb-5   text-center `}>
           <div className={`${styles.firstText} `}>SO, YOU WANT TO TRAVEL TO</div>
           <div className={`${styles.secondText}`}>SPACE</div>
           <div className={`${styles.lastText} mx-auto`}>

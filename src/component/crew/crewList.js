@@ -23,11 +23,14 @@ const CrewList = () => {
                   <img src={val.image} alt="img" width='100%'  />
                 </div>
                 
-                </div>
+                </div> 
                 <div >
-                  <div className="my-4" onClick={addNum}>
-                    dots
-                    <button>add 1</button>
+                  <div className="my-4 flex justify-center" onClick={addNum}>
+                  <img src="./images/crew/OvalG.png" alt='ic' />
+                  <img src="./images/crew/OvalG.png" alt='ic' />
+                  <img src="./images/crew/OvalG.png" alt='ic' />
+                  <img src={view === val.id ? styles.wytImg : styles.greyImg} alt='ic' />
+                    
                   </div>
                   <div>
                     <div className={`${styles.firstText} uppercase text-white opacity-50`}> {val.role}</div>

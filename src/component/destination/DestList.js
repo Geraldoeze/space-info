@@ -4,11 +4,11 @@ import styles from "../styles/styles";
 
 const DestList = () => {
   const [view, setView] = useState(1);
-  const addNum = () => {
-    if (view === 4) {
-      return setView(1);
-    }
-    setView((prev) => prev + 1);
+  const changeNum = (num) => {
+    // if (view === 4) {
+    //   return setView(1);
+    // }
+    setView(num);
   };
 
   return (
@@ -21,10 +21,14 @@ const DestList = () => {
                 <div className="w-[180px] md:w-[300px] mx-auto">
                   <img src={val.image} alt="img"  />
                 </div>
-                <div >
-                  <div onClick={addNum}>
-                    dots moon mars
-                    <button>add 1</button>
+                
+                <div>
+                  {/* Controls */}
+                  <div className="flex justify-center my-3 ">
+                  <div className={`${styles.conSty} ${val.planet === 'MOON' && styles.active}`} onClick={() => changeNum(1)}>MOON</div>
+                  <div className={`${styles.conSty} ${val.planet === 'MARS' && styles.active}`} onClick={() => changeNum(2)}>MARS</div>
+                  <div className={`${styles.conSty} ${val.planet === 'EUROPA' && styles.active}`} onClick={() => changeNum(3)}>EUROPA</div>
+                  <div className={`${styles.conSty} ${val.planet === 'TITAN' && styles.active}`} onClick={() => changeNum(4)}>TITAN</div>
                   </div>
                   <div className="px-10">
                     <div>
