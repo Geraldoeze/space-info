@@ -7,7 +7,7 @@ const DestinationPage = () => {
     return ( 
       
         <div
-        className={`${pStyles.destSmBg} ${pStyles.bg} h-[100vh] text-center `}
+        className={`${pStyles.destSmBg} ${pStyles.bg} text-center `}
         style={{ fontFamily: "Barlow Condense" }}
       >
         <div className={`${pStyles.mainContent}`}>

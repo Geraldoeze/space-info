@@ -5,7 +5,7 @@ import pStyles from "./pageStyle";
 const TechPage = () => {
     return ( 
         <div
-        className={`${pStyles.techSmBg} ${pStyles.bg} h-screen`}
+        className={`${pStyles.techSmBg} ${pStyles.bg} `}
         style={{ fontFamily: "Barlow Condense" }}
       >
         <div className={`${pStyles.mainContent} text-center `}>

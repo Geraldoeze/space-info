@@ -5,11 +5,11 @@ import styles from "../../component/styles/styles";
 export default function Dashboard() {
   return (
     <div
-      className={`${pStyles.smallBg} ${pStyles.bg} `}
+      className={`${pStyles.smallBg} ${pStyles.bg} ${pStyles.largeBg} `}
       style={{ fontFamily: "Barlow Condense" }}
     >
-      <div className={`${styles.mainContent}`}>
-        <div className={` flex flex-col mx-[2rem] mb-5   text-center `}>
+      <div className={`${pStyles.navContent} `}>
+        <div className={` flex flex-col justify-center mx-[2rem] my-16  text-center `}>
           <div className={`${styles.firstText} `}>SO, YOU WANT TO TRAVEL TO</div>
           <div className={`${styles.secondText}`}>SPACE</div>
           <div className={`${styles.lastText} mx-auto`}>

@@ -11,20 +11,22 @@ const CrewList = () => {
     setView((prev) => prev + 1);
   };
 
+  
   return (
-    <div className="h-[80%]">
-      {crewData?.map((val) => {
+    <>
+      {crewData?.filter((val) => view === val.id)
+      .map((val) => {
         return (
-          <div key={val.id}>
-            {view === val.id && (
-              <>
-              <div className="mx-10 border-b-2">
-                <div className="w-[60%] md:w-[45%] mx-auto">
+          <div className="md:flex md:flex-col-reverse" key={val.id}>
+            
+              
+              <div className="mx-10 border-b-2 md:border-0">
+                <div className="w-[60%] md:w-[70%] mx-auto">
                   <img src={val.image} alt="img" width='100%'  />
                 </div>
                 
                 </div> 
-                <div >
+                <div className="md: flex md:flex-col-reverse">
                   <div className="my-4 mx-auto w-[6rem] flex justify-around " onClick={addNum}>
                   <img src={val.id === 1 ? styles.wytImg : styles.greyImg} alt='ic' />
                   <img src={val.id === 2 ? styles.wytImg : styles.greyImg} alt='ic' />
@@ -38,12 +40,12 @@ const CrewList = () => {
                     <div className={`${styles.contentText} m-5`}>{val.content}</div>
                   </div>
                 </div>
-              </>
-            )}
+              
+          
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 

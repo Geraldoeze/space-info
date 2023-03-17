@@ -15,7 +15,7 @@ export default function Navigation() {
   // const openToggle = () => setToggle(true)
 
   return (
-    <nav className="fixed pb-5 w-full bg-transparent flex  item-center navbar">
+    <nav className="fixed z-20 pb-5 w-full bg-transparent flex  item-center navbar">
       <Link className="w-[40px] h-[30px] mx-5 " to="/">
           <div className="my-2">
         <img src="./images/icon.png" alt="logo" width='100px' height='100px' />

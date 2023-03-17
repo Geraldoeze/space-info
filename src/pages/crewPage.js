@@ -4,7 +4,7 @@ import pStyles from "./pageStyle";
 const CrewPage = () => {
   return (
     <div
-      className={`${pStyles.crewBigBg} ${pStyles.bg} h-screen text-center`}
+      className={`${pStyles.crewBigBg} ${pStyles.bg}  text-center`}
       style={{ fontFamily: "Barlow Condense" }}
     >
       <div className={`${pStyles.mainContent}`}>
