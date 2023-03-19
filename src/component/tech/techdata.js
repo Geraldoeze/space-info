@@ -27,3 +27,18 @@ export const techData = [
       "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
   },
 ];
+
+export const idNum = [
+  {
+    id: 1,
+    value: '1'
+  },
+  {
+    id: 2,
+    value: '2'
+  },
+  {
+    id: 3,
+    value: '3'
+  }
+];

@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import "@fontsource/barlow";
 import "@fontsource/barlow-condensed";
+import "@fontsource/bellefair";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

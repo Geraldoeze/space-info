@@ -24,8 +24,8 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Barlow", "sans-serif"],
-        condense: ["Barlow Condensed", "sans-serif Condensed"],
-        belle: ["Bellefair", "sans-serif"],
+        condense: '"Barlow Condensed"',
+        belle: 'Bellefair',
       },
     },
     screens: {

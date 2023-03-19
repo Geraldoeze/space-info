@@ -17,7 +17,7 @@ const CrewList = () => {
       {crewData?.filter((val) => view === val.id)
       .map((val) => {
         return (
-          <div className="md:flex md:flex-col-reverse" key={val.id}>
+          <div className="md:flex md:flex-col-reverse lg:flex-row-reverse" key={val.id}>
             
               
               <div className="mx-10 border-b-2 md:border-0">
@@ -26,7 +26,7 @@ const CrewList = () => {
                 </div>
                 
                 </div> 
-                <div className="md: flex md:flex-col-reverse">
+                <div className="md:flex md:flex-col-reverse">
                   <div className="my-4 mx-auto w-[6rem] flex justify-around " onClick={addNum}>
                   <img src={val.id === 1 ? styles.wytImg : styles.greyImg} alt='ic' />
                   <img src={val.id === 2 ? styles.wytImg : styles.greyImg} alt='ic' />

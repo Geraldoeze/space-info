@@ -18,9 +18,9 @@ const DestList = () => {
       {destinationData?.filter((val) => view === val.id)
       .map((val) => {
         return (
-          <div key={val.id}>
+          <div key={val.id} >
 
-   <div className={` flex flex-col justify-center mx-[2rem] text-center `}>
+   <div className={` flex flex-col justify-center mx-[2rem] text-center lg:flex-row `}>
      <div className="w-[180px] md:w-[300px] mx-auto">
        <img src={val.image} alt="img"  />
      </div>
@@ -33,9 +33,9 @@ const DestList = () => {
        <div className={`${styles.conSty} ${val.planet === 'EUROPA' && styles.active}`} onClick={() => changeNum(3)}>EUROPA</div>
        <div className={`${styles.conSty} ${val.planet === 'TITAN' && styles.active}`} onClick={() => changeNum(4)}>TITAN</div>
       </div>
-       <div className="px-10">
+       <div className="px-5">
          <div>
-         <div className="font-belle font-normal text-[56px] leading-[64.18px] my-5">{val.planet}</div>
+         <div className="font-belle font-normal text-[56px] leading-[64.18px] my-5 md:my-0 md:text-[80px] md:leading-[91.68px]">{val.planet}</div>
          <div className={`${styles.contentText}`}>{val.content}</div>
          <div className="my-10" />
          </div>
@@ -60,5 +60,5 @@ const DestList = () => {
     </>
   );
 };
-
+ 
 export default DestList;
