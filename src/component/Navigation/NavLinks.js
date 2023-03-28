@@ -20,7 +20,7 @@ export const navLinks = [
   {
     id: "tech",
     title: "TECHNOLOGY",
-    path: "tech",
+    path: "/tech",
     num: '03'
   },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 import pStyles from "../pageStyle";
 import styles from "../../component/styles/styles";
+import '../../component/styles/styles.css';
 
 export default function Dashboard() {
   return (
@@ -9,7 +10,7 @@ export default function Dashboard() {
       style={{ fontFamily: "Barlow Condense" }}
     >
       <div className={`${pStyles.navContent} `}>
-        <div className={` flex flex-col justify-center mx-[2rem] my-16  text-center `}>
+        <div className={` flex flex-col justify-center mx-[2rem] my-10  text-center `}>
           <div className={`${pStyles.firstText} md:text-center `}>SO, YOU WANT TO TRAVEL TO</div>
           <div className={`${styles.secondText} font-belle`}>SPACE</div>
           <div className={`${styles.lastText} mx-auto`}>
@@ -19,8 +20,11 @@ export default function Dashboard() {
             world experience!
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <div className={`${pStyles.divEx}`}>Explore</div>
+        <div className="flex justify-center  items-center">
+          <div className={`${pStyles.divCon} bts-wrapper`}>
+          <div className={`${pStyles.divEx} linear`}>Explore</div>
+          </div>
+          
          
         </div>
       </div>

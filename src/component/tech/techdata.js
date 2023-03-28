@@ -1,8 +1,10 @@
+import  {launch, launchSm, rocket, rocketSm, space, spaceSm} from '../../images/tech/imgTech';
+
 export const techData = [
   {
     id: 1,
-    image: './images/tech/launch.jpg',
-    imageSm: './images/tech/launchSm.jpg',
+    image: launch,
+    imageSm: launchSm,
     title: "THE TERMINOLOGY…",
     info: "LAUNCH VEHICLE",
     content:
@@ -10,8 +12,8 @@ export const techData = [
   },
   {
     id: 2,
-    image: './images/tech/rocket.jpg',
-    imageSm: './images/tech/rocketSm.jpg',
+    image: rocket,
+    imageSm: rocketSm,
     title: "THE TERMINOLOGY…",
     info: "SPACEPORT",
     content:
@@ -19,8 +21,8 @@ export const techData = [
   },
   {
     id: 3,
-    image: './images/tech/space.jpg',
-    imageSm: './images/tech/spaceSm.jpg',
+    image: space,
+    imageSm: spaceSm,
     title: "THE TERMINOLOGY…",
     info: "SPACE CAPSULE",
     content:

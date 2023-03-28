@@ -2,51 +2,65 @@ import { crewData } from "./crewdata";
 import React, { useState } from "react";
 import styles from "../styles/styles";
 
+
 const CrewList = () => {
   const [view, setView] = useState(1);
-  const addNum = () => {
-    if (view === 4) {
-      return setView(1);
-    }
-    setView((prev) => prev + 1);
-  };
-
+  const changeNum = (num) => setView(num);
   
+  
+ 
   return (
     <>
-      {crewData?.filter((val) => view === val.id)
-      .map((val) => {
-        return (
-          <div className="md:flex md:flex-col-reverse lg:flex-row-reverse" key={val.id}>
-            
-              
-              <div className="mx-10 border-b-2 md:border-0">
-                <div className="w-[60%] md:w-[70%] mx-auto">
-                  <img src={val.image} alt="img" width='100%'  />
+      {crewData
+        ?.filter((val) => view === val.id)
+        .map((val) => {
+          return (
+            <div key={val.id} className="md:flex md:flex-col-reverse lg:flex lg:flex-row-reverse justify-between lg:text-left">
+              <div className="w-[160px] md:w-[320px] lg:w-[40%] mx-auto">
+                <div className={`sm:w-full flex justify-content lg:flex-row-reverse`}>
+                  <img
+                    src={val.image}
+                    alt="img"
+                    width="100%"
+                    className="hidden lg:block "
+                  />
+                  <img
+                    src={val.imageSm}
+                    alt="img"
+                    width="100%"
+                    className="sm:block lg:hidden"
+                  />
                 </div>
+              </div>
+              <div className="md:flex md:flex-col-reverse lg:w-[55%] lg:my-auto lg:flex">
                 
-                </div> 
-                <div className="md:flex md:flex-col-reverse">
-                  <div className="my-4 mx-auto w-[6rem] flex justify-around " onClick={addNum}>
-                  <img src={val.id === 1 ? styles.wytImg : styles.greyImg} alt='ic' />
-                  <img src={val.id === 2 ? styles.wytImg : styles.greyImg} alt='ic' />
-                  <img src={val.id === 3 ? styles.wytImg : styles.greyImg} alt='ic' />
-                  <img src={val.id === 4 ? styles.wytImg : styles.greyImg} alt='ic' />
-                    
+                <div className="my-2 mx-auto w-[6rem] flex justify-around ">
+                <div className={`${1 === val.id ? styles.wytImg : styles.greyImg}`} onClick={() => changeNum(1)} />
+                <div className={`${2 === val.id ? styles.wytImg : styles.greyImg}`} onClick={() => changeNum(2)} />
+                <div className={`${3 === val.id ? styles.wytImg : styles.greyImg}`} onClick={() => changeNum(3)} />
+                <div className={`${4 === val.id ? styles.wytImg : styles.greyImg}`} onClick={() => changeNum(4)} />
+                
+               
+                  
+                  
+                </div>
+                <div className="px-10 md:w-[80%] mx-auto lg:px-0">
+                <div className={`${styles.firstText} uppercase text-white opacity-50`}> 
+                    {val.role}
                   </div>
-                  <div>
-                    <div className={`${styles.firstText} uppercase text-white opacity-50`}> {val.role}</div>
-                    <div className={`${styles.mainText} my-5`}>{val.name}</div>
-                    <div className={`${styles.contentText} m-5`}>{val.content}</div>
+                  <div className={`${styles.mainText} my-5`}>{val.name}</div>
+                  <div className={`${styles.contentText} my-5`}>
+                    {val.content}
                   </div>
                 </div>
-              
-          
-          </div>
-        );
-      })}
+              </div>
+            </div>
+          );
+        })}
     </>
   );
+  
 };
 
 export default CrewList;
+      

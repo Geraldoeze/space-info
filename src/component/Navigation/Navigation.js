@@ -1,6 +1,6 @@
 import React from "react";
 
-
+import Logo from '../../images/icon.png';
 import { useState } from "react";
 import MainNavigation from "./MainNavigation";
 import DropDownSmall from "./DropDownSmall";
@@ -15,31 +15,31 @@ export default function Navigation() {
   // const openToggle = () => setToggle(true)
 
   return (
-    <nav className="fixed z-20 pb-5 w-full bg-transparent flex  item-center navbar">
+    <nav className="fixed z-20 py-4 w-full bg-transparent flex  item-center navbar">
       <Link className="w-[40px] h-[30px] mx-5 " to="/">
           <div className="my-2">
-        <img src="./images/icon.png" alt="logo" width='100px' height='100px' />
+        <img src={Logo} alt="logo" width='100px' height='100px' />
         </div>
       </Link>
 
        {/* Line */}
-       <div className=" sm:hidden md:w-[30%] md:block h-[5px] my-auto lg:bg-white  lg:w-[40%] " />
+       <div className=" sm:hidden md:w-[30%] md:block opacity-50 h-[1px] my-auto lg:bg-white  lg:w-[40%] lg:relative left-[13px]" />
 
     
 
       {/* SMALL SCREEN */}
       <div className="sm:hidden flex flex-1 justify-end item-center">
         <button
-          class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          className="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
           type="button"
           onClick={() => setToggle((prev) => !prev)}
         >
-          <span class="[&>svg]:w-7">
+          <span className="[&>svg]:w-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="h-7 w-7"
+              className="h-7 w-7"
             >
               <path
                 fillRule="evenodd"
@@ -63,7 +63,7 @@ export default function Navigation() {
 
      
       {/* BIG SCREEN */}
-      <div className={` bg-navbarBg  py-4 list-none sm:flex hidden justify-end item-center flex-1 `}>
+      <div className={` bg-navbarBg list-none sm:flex hidden justify-center item-center flex-1 `}>
         <MainNavigation />
       </div>
     </nav>
