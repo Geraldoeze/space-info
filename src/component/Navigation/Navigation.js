@@ -7,6 +7,7 @@ import DropDownSmall from "./DropDownSmall";
 import { Link } from "react-router-dom";
 // import styless from "./styless";
 import SideDrawer from "./SideDrawer/SideDrawer";
+import MainHeader from "./MainHeader";
 
 
 export default function Navigation() {
@@ -15,6 +16,7 @@ export default function Navigation() {
   // const openToggle = () => setToggle(true)
 
   return (
+    <MainHeader>
     <nav className="fixed z-20 py-4 w-full bg-transparent flex  item-center navbar">
       <Link className="w-[40px] h-[30px] mx-5 " to="/">
           <div className="my-2">
@@ -67,5 +69,6 @@ export default function Navigation() {
         <MainNavigation />
       </div>
     </nav>
+    </MainHeader>
   );
 }

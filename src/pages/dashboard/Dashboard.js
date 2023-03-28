@@ -11,7 +11,7 @@ export default function Dashboard() {
     >
       <div className={`${pStyles.navContent} `}>
         <div className={` flex flex-col justify-center mx-[2rem] my-10  text-center `}>
-          <div className={`${pStyles.firstText} md:text-center `}>SO, YOU WANT TO TRAVEL TO</div>
+          <div className={`${pStyles.firstText} md:text-center lg:mb-5 `}>SO, YOU WANT TO TRAVEL TO</div>
           <div className={`${styles.secondText} font-belle`}>SPACE</div>
           <div className={`${styles.lastText} mx-auto`}>
             Let’s face it; if you want to go to space, you might as well

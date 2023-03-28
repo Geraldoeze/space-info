@@ -1,7 +1,5 @@
 
-
 const styles = {
-  
     mainContent: 'absolute top-[8rem] text-white',
     contentText: "font-poppins text-[16px] leading-[26px] text-[#D0D6F9] lg:text-[18px] lg:leading-[32px]",
     firstText: 'text-[#D0D6F9] font-normal text-[16px] leading-[19px] tracking-[2.7px] md:text-[24px] md:leading-[27.5px] lg:text-[32px] lg:leading-[36.67px]',
