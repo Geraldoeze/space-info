@@ -6,7 +6,7 @@ const pStyles = {
     navContent: 'h-[100%] grid grid-cols-1 lg:grid-cols-2 lg:content-end',
     mainContent: ' flex flex-col lg:pl-[5rem]',
     
-    numText: 'font-bold font-poppins text-[16px] leading-[19px] tracking-[2.7px] opacity-25 md:text-[20px] md:leading-[24px]',
+    numText: 'font-bold font-poppins text-[16px] leading-[19px] tracking-[2.7px] opacity-25 md:text-[20px] md:leading-[24px] lg:text-[28px] lg:leading-[33.6px] lg:font-bold',
     firstText: 'mt-[6rem] font-normal font-condense text-[16px] leading-[19px] tracking-[2.7px] h-[5vh] md:text-left md:text-[20px] md:leading-[24px] lg:text-[28px] lg:leading-[33.6px]',
 
     com: ` flex flex-col justify-center mx-[2rem] my-16  text-center `,
