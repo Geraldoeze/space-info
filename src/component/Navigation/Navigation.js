@@ -25,12 +25,12 @@ export default function Navigation() {
       </Link>
 
        {/* Line */}
-       <div className=" sm:hidden md:w-[30%] md:block opacity-50 h-[1px] my-auto lg:bg-white  lg:w-[40%] lg:relative left-[13px]" />
+       <div className=" hidden md:w-[30%] md:block opacity-50 h-[1px] my-auto lg:bg-white  lg:w-[40%] lg:relative left-[13px]" />
 
     
 
       {/* SMALL SCREEN */}
-      <div className="sm:hidden flex flex-1 justify-end item-center">
+      <div className="sm:hidden flex flex-1 justify-end item-center mr-5">
         <button
           className="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
           type="button"
