@@ -3,7 +3,7 @@
 const pStyles = {
     bg: 'bg-cover bg-center min-h-screen text-white',
     bgCrew: 'bg-cover bg-center h-auto  text-white',
-    navContent: 'h-[100%] grid grid-cols-1 lg:grid-cols-2 lg:content-end',
+    navContent: 'h-screen grid grid-cols-1 lg:grid-cols-2 lg:content-end',
     mainContent: ' flex flex-col lg:pl-[5rem]',
     
     numText: 'font-bold font-poppins text-[16px] leading-[19px] tracking-[2.7px] opacity-25 md:text-[20px] md:leading-[24px] lg:text-[28px] lg:leading-[33.6px] lg:font-bold',

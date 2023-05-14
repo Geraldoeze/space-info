@@ -9,7 +9,7 @@ export default function Router() {
     const routes = useRoutes([
         {
             path: '/',
-            element: <Dashboard />
+            element: <Dashboard  />
         },
         {
             path: '/dest',

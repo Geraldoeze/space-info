@@ -26,7 +26,7 @@ const DestList = () => {
                   <img src={val.image} alt="img" />
                 </div>
 
-                <div className=" lg:w-[50%] lg:flex lg:flex-col lg:justify-center">
+                <div className=" lg:w-[50%] lg:flex lg:flex-col lg:justify-center  lg:text-left">
                   {/* Controls */}
                   <div className="flex justify-center my-3 cursor-pointer ">
                     <div

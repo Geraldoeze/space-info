@@ -5,7 +5,7 @@ import Navigation from '../Navigation/Navigation'
 export default function Layout({children}) {
   return (
     
-    <div className='bg-[black]'>
+    <div>
       <Navigation /> 
       {children}
     </div>

@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navbarBg: 'rgba(255, 255, 255, 0.04)',
+        navbarBg: 'rgba(255, 255, 255, 0.4)',
         navBg: 'rgba(255, 255, 255, 0.7)',
       
         textBlack: "rgba(0, 0, 0, 1)",

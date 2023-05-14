@@ -13,7 +13,7 @@ export default function DropDown() {
       <ul className="flex text-white font-condense">
         {navLinks.map((item) => {
           return (
-            <li key={item.id} className={`mx-5 h-[3rem] ${pathname === item.path ? 'border-b-[2px]' : '' }  text-[16px] tracking-[2.7px]`}>
+            <li key={item.id} className={`mx-5 h-[3.5rem] ${pathname === item.path ? 'border-b-[2px]' : '' }  text-[16px] tracking-[2.7px]`}>
               <Link className="flex my-[1rem] leading-[19.2px]" to={item.path}>
                 <span className={`${styless.numSty} sm:hidden lg:block`}>
                   {item.num}
