@@ -8,12 +8,15 @@ export default function Dashboard() {
   
   
   return (
+    // <div
+    //   className={`${pStyles.smallBg} ${pStyles.bg} ${pStyles.largeBg} md:bg-bottom `}
+    //   style={{ fontFamily: "Barlow Condense" }}
+    // >
     <div
-      className={`${pStyles.smallBg} ${pStyles.bg} ${pStyles.largeBg} md:bg-bottom `}
+      className={`${pStyles.bg} md:bg-bottom `}
       style={{ fontFamily: "Barlow Condense" }}
     >
-    
-     
+ 
       <div className={`${pStyles.navContent} `}>
         <div className={` flex flex-col justify-center mx-[2rem] my-10  text-center  lg:text-left `}>
           <div className={`${pStyles.firstText} md:text-center lg:mb-5  lg:text-left lg:ml-5`}>SO, YOU WANT TO TRAVEL TO</div>
@@ -29,8 +32,7 @@ export default function Dashboard() {
           <div className={`${pStyles.divCon} bts-wrapper`}>
           <div className={`${pStyles.divEx} linear`}>Explore</div>
           </div>
-          
-         
+
         </div>
       </div>
     </div>
