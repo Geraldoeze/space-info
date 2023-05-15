@@ -8,14 +8,11 @@ export default function Dashboard() {
   
   
   return (
-    // <div
-    //   className={`${pStyles.smallBg} ${pStyles.bg} ${pStyles.largeBg} md:bg-bottom `}
-    //   style={{ fontFamily: "Barlow Condense" }}
-    // >
     <div
-      className={`${pStyles.bg} md:bg-bottom `}
+      className={`${pStyles.smallBg} ${pStyles.bg} ${pStyles.largeBg} md:bg-bottom `}
       style={{ fontFamily: "Barlow Condense" }}
     >
+   
  
       <div className={`${pStyles.navContent} `}>
         <div className={` flex flex-col justify-center mx-[2rem] my-10  text-center  lg:text-left `}>
